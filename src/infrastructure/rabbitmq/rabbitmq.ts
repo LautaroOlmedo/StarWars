@@ -1,12 +1,14 @@
 import * as amqp from 'amqplib'
+
+// ---------- ---------- ---------- ---------- ----------
+
 export class RabbitMQClient{
     constructor(username: string, password: string, host: string, vhost: string) {
         this.connectRabbitMQ(username, password, host, vhost)
     }
     public async connectRabbitMQ(username: string, password: string, host: string, vhost: string): Promise<void>{
         try {
-            console.log("USERNAMEEEEEEEEEEEEE: ", username)
-            this.connection = await amqp.connect(`amqp://lautaro:secret@localhost:5672/dollar`);
+            this.connection = await amqp.connect(`amqp://lautaro:secret@localhost:5672/product`);
             this.ch = await this.connection.createChannel();
         }catch (e) {
             console.log(e)

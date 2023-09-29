@@ -4,7 +4,7 @@ export const config = {
     },
     rabbitmq: {
         host: process.env.RABBITMQ_HOST || "localhost:5672",
-        vhost: process.env.VHOST || "dollar",
+        vhost: process.env.VHOST || "product",
         username: process.env.USERNAME || "lautaro",
         password: process.env.USERNAME || "secret",
         heartbeat: 10
