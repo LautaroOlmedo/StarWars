@@ -18,13 +18,12 @@ export class ServerBootstrap{
         this.start();
     }
 
-    private async initializeServerAndRabbitMQ(): Promise<void> {
+    private async initializeRabbitMQ(): Promise<void> {
         try {
             await this.rabbitMQ.createQueue('testQueue', true, false);
             await this.rabbitMQ.createBinding('testQueue', 'product.*', 'product_events');
 
-            console.log('RabbitMQ connected correctly.');
-            //await this.startServer();
+            console.log('queue and binding connected correctly.');
         } catch (e) {
             throw new Error(`Error: ${e}`)
         }
