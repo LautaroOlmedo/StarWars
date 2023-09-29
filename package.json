@@ -14,9 +14,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LautaroOlmedo/Legendaryum-challenge/issues"
+    "url": "https://github.com/LautaroOlmedo/Node-RabbitMQ"
   },
-  "homepage": "https://github.com/LautaroOlmedo/Legendaryum-challenge#readme",
+  "homepage": "https://github.com/LautaroOlmedo/Node-RabbitMQ",
   "dependencies": {
     "amqplib": "^0.10.3",
     "cors": "^2.8.5",
