@@ -1,8 +1,5 @@
-import {ServerBootstrap} from "./src/infrastructure/http/server";
-import {rabbitMQ} from './src/infrastructure/dependencies'
+import { ServerBootstrap } from "./src/infrastructure/server";
 
+// ---------- ---------- ---------- ---------- ----------
 
-new ServerBootstrap(rabbitMQ);
-
-
-
+new ServerBootstrap();
